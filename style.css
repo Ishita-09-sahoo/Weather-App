@@ -467,12 +467,17 @@ main {
   .location-text {
     font-size: 1.5vw;
   }
+
+  .search-bar{
+    width: 70%;
+  }
+
   /* header ends */
 
   /* main */
   main {
     display: grid;
-    grid-template-columns: 90vw;
+    grid-template-columns: 70vw;
     grid-template-rows: 45vh;
     justify-content: center;
     gap: 5vh;
