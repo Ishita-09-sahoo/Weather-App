@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="search-bar">
+                <div class="search-icon">
+                    <img src="Assets/Icons/search.png" alt="search-icon">
+                </div>
+                <input type="text" placeholder="Search city" class="search-input" />
+                <button class="search-button" type="submit">
+                    <img src="Assets/Icons/enter.png" alt="enter">
+                </button>
+                <div id="dropdown" class="search-suggestions"></div>
+            </div>
+            <div class="location">
+                <div class="location-icon">
+                    <img src="Assets/Icons/loaction.png" alt="loaction-icon">
+                </div>
+                <div class="location-text">
+                    Current Location
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="location-date-time box">
+                <div class="info-box">
+                    <div class="loc">
+                        Location
+                    </div>
+                    <div class="time-date">
+                        <div class="time">
+                            Time
+                        </div>
+                        <div class="date">
+                            Date
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="weather-details box">
+                <div class="main-details">
+                    <div class="temp">
+                        72&deg;C
+                    </div>
+                    <div class="feels-like">
+                        Feels like: 22&deg;C
+                    </div>
+                    <div class="maxmin-temp">
+                        max/min
+                    </div>
+                </div>
+                <div class="icon-weather">
+                    <img src="Assets/Images/weather.png" alt="weather">
+                    <div class="weather">
+                        Sunny
+                    </div>
+                </div>
+                <div class="sunrise-sunset">
+                    <div class="sunrise">
+                        <img src="Assets/Images/sunrise.png" alt="sunrise">
+                        <div class="sunrise-text">
+                            Sunrise
+                            <br>
+                            Time
+                        </div>
+                    </div>
+                    <div class="sunset">
+                        <img src="Assets/Images/sunset.png" alt="sunset">
+                        <div class="sunset-text">
+                            Sunset
+                            <br>
+                            Time
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="day-forecast box">
+                <div class="heading">
+                    Weekly Forecast:
+                </div>
+                <div class="day">
+                    <div class="image">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="temp-range">
+                        min&deg;/max&deg;
+                    </div>
+                    <div class="day-date">
+                        Day,Date
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="image">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="temp-range">
+                        min&deg;/max&deg;
+                    </div>
+                    <div class="day-date">
+                        Day,Date
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="image">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="temp-range">
+                        min&deg;/max&deg;
+                    </div>
+                    <div class="day-date">
+                        Day,Date
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="image">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="temp-range">
+                        min&deg;/max&deg;
+                    </div>
+                    <div class="day-date">
+                        Day,Date
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="image">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="temp-range">
+                        min&deg;/max&deg;
+                    </div>
+                    <div class="day-date">
+                        Day,Date
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="image">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="temp-range">
+                        min&deg;/max&deg;
+                    </div>
+                    <div class="day-date">
+                        Day,Date
+                    </div>
+                </div>
+                <div class="day">
+                    <div class="image">
+                        <img src="" alt="img">
+                    </div>
+                    <div class="temp-range">
+                        min&deg;/max&deg;
+                    </div>
+                    <div class="day-date">
+                        Day,Date
+                    </div>
+                </div>
+
+            </div>
+            <div class="hourly-forecast box">
+                <div class="heading">
+                    Hourly Forecast:
+                </div>
+                <div class="hours">
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                    <div class="hour">
+                        <div class="hour-time">
+                            hour
+                        </div>
+                        <div class="hour-temp">
+                            <img src="" alt="img">
+                            <br>
+                            25&deg;
+                        </div>
+                        <div class="hour-wind">
+                            3km/h
+                        </div>
+                        <div class="hour-rain">
+                            5%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="moon-cycle box">
+                <div class="moonrise-moonset">
+                    <div class="moonrise">
+                        Moonrise <br> time
+                    </div>
+                    <div class="moonset">
+                        Moonset <br> time
+                    </div>
+                </div>
+                <div class="moonphase">
+                    <div class="moonphase-img">
+                        <img src="Assets/Images/First Quarter.svg" alt="moonphase">
+                    </div>
+                    <div class="moonphase-text">
+                        moonphase
+                    </div>
+                </div>
+            </div>
+            <div class="extra-details box">
+                <div class="humidity card">
+                    <div class="card-img">
+                        <img src="Assets/Images/humidity.png" alt="humidity">
+                        Humidity
+                    </div>
+                    <div class="card-text"></div>
+                </div>
+                <div class="wind-speed card">
+                    <div class="card-img">
+                        <img src="Assets/Images/wind.png" alt="wind">
+                        Wind Speed
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                </div>
+                <div class="pressure card">
+                    <div class="card-img">
+                        <img src="Assets/Images/pressure.png" alt="pressure">
+                        Pressure
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                </div>
+                <div class="uv card">
+                    <div class="card-img">
+                        <img src="Assets/Images/uv.png" alt="uv">
+                        UV Index
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                </div>
+                <div class="ppt card">
+                    <div class="card-img">
+                        <img src="Assets/Images/precipitation.svg" alt="ppt">
+                        Precipitation
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                </div>
+                <div class=" visibility card">
+                    <div class="card-img">
+                        <img src="Assets/Images/visibility.png" alt="visibility">
+                        Visibility
+                    </div>
+                    <div class="card-text">
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
